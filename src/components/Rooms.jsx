@@ -17,15 +17,15 @@ const Rooms = () => {
           Suites & Rooms
         </h2>
         <div className="w-16 h-1 bg-hpBlue mx-auto mb-10"></div>
-        <p className="text-lg md:text-xl text-gray-700 font-light leading-relaxed">
+        <p className="text-base text-gray-700 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
           Hinter den Toren des Hotel Pavillon verbergen sich 210qm Fischgrätparkett mit jeder Menge Bananen-Palmen, Disco-Kugeln, Diwans, Spiegel, Zeichenstifte und Mac-Books. Wer mehr sehen will, schreibt an{' '}
           <a href="mailto:join@hotelpavillon.at" className="text-hpBlue font-medium hover:underline">join@hotelpavillon.at</a>
         </p>
       </div>
       
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 mb-32 pb-16">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-10 mb-32 pb-16">
         {roomImages.map((src, idx) => (
-          <div key={idx} className={`overflow-hidden shadow-2xl rounded-[2rem] bg-indigo-50/50 group ${idx % 3 === 1 ? 'md:translate-y-12' : idx % 3 === 2 ? 'md:translate-y-24' : ''}`}>
+          <div key={idx} className={`overflow-hidden shadow-2xl rounded-[1.5rem] bg-indigo-50/50 group ${idx % 4 === 1 ? 'md:translate-y-8' : idx % 4 === 2 ? 'md:translate-y-16' : idx % 4 === 3 ? 'md:translate-y-24' : ''}`}>
             <img 
               src={src} 
               alt="Room" 

@@ -4,6 +4,7 @@ import About from './components/About';
 import People from './components/People';
 import Location from './components/Location';
 import Rooms from './components/Rooms';
+import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <People />
         <Location />
         <Rooms />
+        <Pricing />
         <Contact />
       </main>
     </div>

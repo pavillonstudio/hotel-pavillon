@@ -31,7 +31,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block rounded-full px-8 py-3 tracking-wider text-sm font-semibold transition-all duration-300;
+    @apply inline-block rounded-full px-8 py-3 tracking-wider text-sm font-semibold uppercase transition-all duration-300;
     background-color: #0a77a0; /* brand color */
     color: #ffffff;
     box-shadow: 0 4px 14px -2px rgba(10, 119, 160, 0.2);
